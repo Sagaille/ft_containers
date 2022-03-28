@@ -1,6 +1,6 @@
 # ft_container_push
 
-## Implement 3 containers types of the C++ standard template library : vector, stack and map (C++98 standard).
+## Implement 3 containers of the C++ standard template library : vector, stack and map (C++98 standard).
 ## Use of this project isn't just to master the containers but to handle templates and getting used to generic programming.
 
 We use cppreference.com and cplusplus.com as main reference. 

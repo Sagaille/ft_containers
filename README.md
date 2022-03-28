@@ -6,10 +6,7 @@
 We use cppreference.com and cplusplus.com as main reference. 
 Some usefull references and tips:
 
-iterator_traits
-https://stackoverflow.com/questions/6742008/what-are-the-typical-use-cases-of-an-iterator-trait
-
-std::allocator in detail + implementation
+## std::allocator in detail
 https://medium.com/@vgasparyan1995/what-is-an-allocator-c8df15a93ed
 https://stackoverflow.com/questions/31358804/whats-the-advantage-of-using-stdallocator-instead-of-new-in-c
 
@@ -28,7 +25,7 @@ So the vector cannot just use new X() or delete &m_data[1] to create and destroy
 So you use an allocator when an allocator is required (such as when using a container) and you use std::allocator when you don't want to provide a custom allocator and just want the standard one.
 _________________________________________________________________________________________________________________________________________________________________________________
 
-Typedefs and member types
+## Typedefs and member types
 
 What is the actual meaning of member types(value_type, allocator_type, etc.) ?
 
@@ -39,10 +36,10 @@ For example, value_type corresponds to the type of the element that the vector c
 Having the commonly-used types available as a type on the container is useful when the container's type itself is unknown.
 
 ___________________________________________________________________________________________________
-Quick reminders :
 
-Operator overloads
+## Operator overloads
 
+Quick reminder :
 Mutating operators like += or -= return by reference, because they return the mutated object itself (by: return *this;)
 Normal operators like + or - should return by value, because a new object needs to be constructed to hold the result.
 
@@ -52,7 +49,7 @@ https://en.cppreference.com/w/cpp/language/operator_incdec
 https://stackoverflow.com/questions/24901/is-there-a-performance-difference-between-i-and-i-in-c
 ____________________________________________________________________________________________________
 
-Random access iterators
+## Random access iterators
 https://www.geeksforgeeks.org/random-access-iterators-in-cpp/
 
 _____________________________________________________________________________________________________
@@ -62,16 +59,22 @@ The size of a container is the number of elements it contains. ... The capacity 
 
 _____________________________________________________________________________________________________
 
-
+## std::uninitialized
+  
 Why do we use std::uninitialized_copy with vector?
 https://stackoverflow.com/questions/60910216/c-stdcopy-vs-stduninitialized-copy
 (short answer = allocators) use it when memory was allocated but not initialized
 
 _____________________________________________________________________________________________________
 
-iterator_traits explained + implementation
+## iterator_traits
+https://stackoverflow.com/questions/6742008/what-are-the-typical-use-cases-of-an-iterator-trait
 https://www.lix.polytechnique.fr/~liberti/public/computing/prog/libstdc++/iterator_traits.html
-
+  
+_____________________________________________________________________________________________________
+  
+## ENABLE_IF  
+  
 ENABLE_IF is a a compile-time switch for templates
 
 Used when template substitution causes an error.

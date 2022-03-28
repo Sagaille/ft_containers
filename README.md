@@ -2,6 +2,7 @@
 
 ## Implement 3 containers of the C++ standard template library : vector, stack and map (C++98 standard).
 ## Use of this project isn't just to master the containers but to handle templates and getting used to generic programming.
+## Doing a Red Black binary search tree was also a good exercise.
 
 We use cppreference.com and cplusplus.com as main reference. 
 Some usefull references and tips:
